@@ -15,10 +15,18 @@ console.log(hp);
 
 console.log("--- 単項演算 ---");
 hp = 5;
-hp ++;
+hp++;
 console.log(hp);
 
 hp = 5;
-hp --
+hp--
+console.log(hp);
+
+console.log("--- 複合演算 ---");
+hp = 5;
+hp += 3;
+hp -= 2;
+hp *= 3;
+hp /= 5;
 console.log(hp);
 
