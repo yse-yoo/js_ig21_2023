@@ -24,8 +24,13 @@ const hello2 = (name) => {
 var message = hello2("東京　太郎");
 console.log(message);
 
-window.onload = function() {
+// window.onload = function() {
+//     console.log("東京");
+// }
+window.onload = () => {
     console.log("東京");
+    var message = hello2("YSE");
+    console.log(message);
 }
 
 console.log("横浜");
