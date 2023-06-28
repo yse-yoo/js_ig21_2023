@@ -5,3 +5,9 @@ function calculateTotalPrice(price, amount) {
 
 var totalPrice = calculateTotalPrice(200, 5);
 console.log(totalPrice);
+
+// 無名関数（anonymous function）
+const hello = function(name) {
+    var message = name + "さん、こんにちは！";
+    return message;
+}
