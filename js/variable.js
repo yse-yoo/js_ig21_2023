@@ -23,3 +23,6 @@ console.log(isActive)
 const TAX_RATE = 0.1
 // TAX_RATE = 0.2
 console.log(TAX_RATE)
+
+const TOKYO = "東京"
+console.log(TOKYO)
