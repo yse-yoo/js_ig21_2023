@@ -30,3 +30,8 @@ hp *= 3;
 hp /= 5;
 console.log(hp);
 
+console.log("--- 文字の連結 ---");
+hp = 10;
+var monsterName = "スライム";
+var message = monsterName + "のHPは" + hp;
+console.log(message);
