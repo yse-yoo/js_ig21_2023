@@ -14,3 +14,12 @@ const hello = function(name) {
 
 var message = hello("YSE");
 console.log(message);
+
+// アロー関数（arrow function）
+const hello2 = (name) => {
+    var message = name + "さん、こんにちは！";
+    return message;
+}
+
+var message = hello2("東京　太郎");
+console.log(message);
