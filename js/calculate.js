@@ -35,3 +35,18 @@ hp = 10;
 var monsterName = "スライム";
 var message = monsterName + "のHPは" + hp;
 console.log(message);
+
+console.log("--- 論理演算 ---");
+var isBool = false;
+hp = 10;
+isBool = (hp == 20);
+console.log(isBool);
+
+isBool = (hp > 10);
+console.log(isBool);
+
+isBool = (hp <= 10);
+console.log(isBool);
+
+isBool = (hp != 20);
+console.log(isBool);
