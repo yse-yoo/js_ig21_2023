@@ -50,3 +50,9 @@ console.log(isBool);
 
 isBool = (hp != 20);
 console.log(isBool);
+
+console.log("--- 三項演算 ---");
+hp = 5; 
+message = (hp < 10) ? "ピンチ！" : "大丈夫";
+console.log(message);
+
