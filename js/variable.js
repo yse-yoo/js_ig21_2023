@@ -14,3 +14,12 @@ var speed = 45.4
 console.log("Avg:" + average)
 console.log("Speed:" + speed)
 
+var isActive = true
+isActive = false
+
+console.log(isActive)
+
+// 定数（Constant）
+const TAX_RATE = 0.1
+// TAX_RATE = 0.2
+console.log(TAX_RATE)
