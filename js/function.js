@@ -11,3 +11,6 @@ const hello = function(name) {
     var message = name + "さん、こんにちは！";
     return message;
 }
+
+var message = hello("YSE");
+console.log(message);
