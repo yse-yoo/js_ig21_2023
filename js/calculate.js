@@ -19,7 +19,7 @@ hp++;
 console.log(hp);
 
 hp = 5;
-hp--
+hp--;
 console.log(hp);
 
 console.log("--- 複合演算 ---");
