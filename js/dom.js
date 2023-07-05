@@ -1,2 +1,3 @@
 var priceElement = document.getElementById("price")
-console.log(priceElement)
+var price = priceElement.innerText
+console.log(price)
