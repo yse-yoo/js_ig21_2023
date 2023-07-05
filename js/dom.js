@@ -5,4 +5,5 @@ console.log(price)
 
 //コンテンツ更新
 var messageElement = document.getElementById("message")
-messageElement.innerText = "いらっしゃい"
+// messageElement.innerText = "<p>いらっしゃい</p>"
+messageElement.innerHTML = "<p>いらっしゃい</p>"
