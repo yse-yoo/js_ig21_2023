@@ -14,3 +14,7 @@ outputP("スポーツ観戦")
 
 // titleプロパティ
 document.title = "プロフィール"
+
+//bodyのstyleを変更
+document.body.style.background = "#f0f0f0"
+document.body.style.color = "#808080"
