@@ -11,3 +11,6 @@ document.write("<h2>趣味</h2>")
 outputP("旅行")
 outputP("ゲーム")
 outputP("スポーツ観戦")
+
+// titleプロパティ
+document.title = "プロフィール"
