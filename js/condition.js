@@ -20,6 +20,7 @@ console.log(date)
 var year = date.getFullYear()
 var month = date.getMonth() + 1
 var day = date.getDate()
+//Sun:0 Mon:1 Tue:2 Wed:3 Thu:4 Fri:5 Sat:6
 var weekIndex = date.getDay()
 
 var dateString = year + "/" + month + "/" + day
@@ -29,12 +30,12 @@ document.getElementById("today").innerHTML = dateString
 var weekday = "水"
 var garbage = ""
 
-switch (weekday) {
-    case "月":
-    case "金":
+switch (weekIndex) {
+    case 1:
+    case 5:
         garbage = "燃えるゴミ"
         break;
-    case "水":
+    case 3:
         garbage = "燃えないゴミ"
         break;
     default:
