@@ -11,7 +11,9 @@ function reset() {
 }
 
 function start() {
+    clearInterval(timer)
     timer = setInterval(() => {
-        
+        count++
+        counterElement.innerHTML = count
     }, interval);
 }
