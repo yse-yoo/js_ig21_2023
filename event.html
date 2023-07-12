@@ -15,6 +15,20 @@
         <!-- changeイベントを登録： onchange -->
         <input type="text" class="form-control" id="user_name" onchange="inputUserName()">
         <p id="message" class="alert alert-info mt-3"></p>
+
+        <h2>注文</h2>
+        <dl>
+            <dt>商品名</dt>
+            <dd>コーヒー</dd>
+            <dt>価格</dt>
+            <dd>300</dd>
+            <dt>個数</dt>
+            <dd class="w-25">
+                <input type="number" name="quantity" 
+                id="quantity" class="form-control"
+                min="0" max="10">
+            </dd>
+        </dl>
     </div>
     <script src="js/event.js"></script>
 </body>
