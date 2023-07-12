@@ -1,3 +1,4 @@
+// If
 var message = ""
 var price = 200
 var money = 500
@@ -10,3 +11,7 @@ if (price <= 0) {
    message = "お金がたりません" 
 }
 console.log(message)
+
+// Switch
+var weekday = "水"
+var garbage = ""
