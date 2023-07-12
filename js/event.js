@@ -14,11 +14,14 @@ function order() {
     var quantity = quantityElement.value
     console.log(itemName, price, quantity)
 
+    var totalPrice = price * quantity
+
     // ' = シングルクォート
     // " = ダブルクォート
     // ` = バッククォート
     // var message = `${itemName}を${quantity}つでよいですか？`
     var message = itemName + "を" + quantity + "つでよいですか？"
+    message += totalPrice + "円になります"
     messageElement.innerHTML = message
 }
 
