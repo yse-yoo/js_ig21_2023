@@ -9,3 +9,9 @@ function reset() {
     count = 0
     counterElement.innerHTML = count
 }
+
+function start() {
+    timer = setInterval(() => {
+        
+    }, interval);
+}
