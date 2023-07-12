@@ -15,3 +15,17 @@ console.log(message)
 // Switch
 var weekday = "水"
 var garbage = ""
+
+switch (weekday) {
+    case "月":
+    case "金":
+        garbage = "燃えるゴミ"
+        break;
+    case "水":
+        garbage = "燃えないゴミ"
+        break;
+    default:
+        garbage = "回収なし"
+        break;
+}
+document.getElementById("garbage").innerHTML = garbage
