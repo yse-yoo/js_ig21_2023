@@ -7,9 +7,12 @@ function inputUserName() {
     messageElement.innerHTML = message
 }
 
+function order() {
+    console.log("Order!!!")
+}
+
 var userNameElement = document.getElementById("user_name")
 var messageElement = document.getElementById("message")
-
 
 var itemNameElement = document.getElementById("item_name")
 var priceElement = document.getElementById("price")
