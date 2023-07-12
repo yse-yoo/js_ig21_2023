@@ -17,3 +17,7 @@ function start() {
         counterElement.innerHTML = count
     }, interval);
 }
+
+function stop() {
+    clearInterval(timer)
+}
