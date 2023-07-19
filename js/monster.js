@@ -24,7 +24,9 @@ stage.appendChild(a)
 
 // モンスターリスト
 function createMonsterElement(name, imageName) {
-    
+    var div = document.createElement("div")    
+    var p = document.createElement("p")    
+    var img = document.createElement("img")    
 }
 
 var monsterList = document.getElementById("monster-list")
