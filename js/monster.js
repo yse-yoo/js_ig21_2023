@@ -36,12 +36,25 @@ function createMonsterElement(name, imageName) {
     //divに追加
     div.appendChild(p)
     div.appendChild(img)
+    //class=col-4
+    // div.setAttribute("class", "col-4")
+    div.className = "col-3"
+    // div.classList.add("col-4")
+    // div.classList.add("monster")
 
     //id=monster-listに追加
     monsterList.appendChild(div)
 }
 
 var monsterList = document.getElementById("monster-list")
+createMonsterElement("モンスタ1", "monster_006.png")
+createMonsterElement("モンスタ2", "monster_022.png")
+createMonsterElement("モンスタ3", "monster_040.png")
+
+createMonsterElement("モンスタ1", "monster_006.png")
+createMonsterElement("モンスタ2", "monster_022.png")
+createMonsterElement("モンスタ3", "monster_040.png")
+
 createMonsterElement("モンスタ1", "monster_006.png")
 createMonsterElement("モンスタ2", "monster_022.png")
 createMonsterElement("モンスタ3", "monster_040.png")
