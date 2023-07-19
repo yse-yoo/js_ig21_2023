@@ -8,7 +8,6 @@ console.log(selectDrink)
 var count = drinks.length
 console.log(count)
 
-// push()
 console.log("--- push() ---")
 drinks.push("炭酸水")
 console.log(drinks)
@@ -23,4 +22,12 @@ console.log(drinks)
 
 console.log("--- unshift() ---")
 drinks.unshift("アイスコーヒー")
+console.log(drinks)
+
+console.log("--- splice() ---")
+drinks.splice(1, 0, "オレンジジュース")
+console.log(drinks)
+
+console.log("--- splice() ---")
+drinks.splice(2, 1)
 console.log(drinks)
