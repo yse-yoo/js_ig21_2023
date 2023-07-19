@@ -10,3 +10,6 @@ var character = {
 console.log(character)
 console.log(character.name)
 console.log(character.level)
+
+character.weapon = "ブロンズナイフ"
+console.log(character)
