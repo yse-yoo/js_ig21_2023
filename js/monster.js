@@ -14,3 +14,10 @@ stage.appendChild(monsterElement2)
 
 //childの削除
 stage.removeChild(monsterElement1)
+
+// aリンク追加
+var a = document.createElement("a")
+a.href = "https://www.google.com/search?q=" + monsterElement1.innerHTML
+a.target = "_blank"
+a.innerHTML = monsterElement1.innerHTML
+stage.appendChild(a)
