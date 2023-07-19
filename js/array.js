@@ -31,3 +31,12 @@ console.log(drinks)
 console.log("--- splice() ---")
 drinks.splice(2, 1)
 console.log(drinks)
+
+console.log("--- indexOf() ---")
+var index = drinks.indexOf("ほうじ茶")
+console.log(index)
+
+//配列の更新
+drinks[1] = "ウーロン茶"
+console.log(drinks)
+
