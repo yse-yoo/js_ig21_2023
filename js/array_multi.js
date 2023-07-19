@@ -42,3 +42,5 @@ var users = [
         email: "user3@test.com",
     },
 ]
+console.log(users[1])
+console.log(users[1].name)
