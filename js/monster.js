@@ -27,6 +27,21 @@ function createMonsterElement(name, imageName) {
     var div = document.createElement("div")    
     var p = document.createElement("p")    
     var img = document.createElement("img")    
+
+    //モンスター名設定
+    p.innerHTML = name
+    //画像ファイル設定
+    img.src = "images/" + imageName
+
+    //divに追加
+    div.appendChild(p)
+    div.appendChild(img)
+
+    //id=monster-listに追加
+    monsterList.appendChild(div)
 }
 
 var monsterList = document.getElementById("monster-list")
+createMonsterElement("モンスタ1", "monster_006.png")
+createMonsterElement("モンスタ2", "monster_022.png")
+createMonsterElement("モンスタ3", "monster_040.png")
