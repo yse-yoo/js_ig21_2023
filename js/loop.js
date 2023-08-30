@@ -32,7 +32,7 @@ for (var index = 0; index < drinks.length; index++) {
 
 function processArray(values, callback) {
     //イテレータブルなデータを繰り返し
-    for (const value in values) {
+    for (const value of values) {
         //コールバック関数に引数を渡して実行
         callback(value)
     }
