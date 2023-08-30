@@ -99,5 +99,15 @@ var newItems = items.map(function(item) {
 console.log(newItems)
 
 // filter
+console.log("--- filter ---")
 var newItems = items.filter((item) => item.price > 300)
+console.log(newItems)
+
+console.log("--- for-of ---")
+var newItems = []
+for (var item of items) {
+    if (item.price > 300) {
+        newItems.push(item)
+    }
+}
 console.log(newItems)
