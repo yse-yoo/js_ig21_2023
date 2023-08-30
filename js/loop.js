@@ -61,4 +61,8 @@ processArray(numbers, (value) => {
     console.log(answer)
 })
 
-
+//forEach
+console.log("--- forEach ---")
+drinks.forEach((drink) => {
+    console.log(drink) 
+});
