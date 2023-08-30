@@ -7,15 +7,16 @@ var rarities = [
 ];
 
 function getRandomItemByProbability(items) {
+    // probability の合計
     var totalProbability = items.reduce(function (sum, item) {
         return sum + item.probability;
     }, 0);
 
+    // 0 - 100のランダムな数字
     var randomValue = Math.random() * totalProbability;
     var accumulatedProbability = 0;
 
-    for (var i = 0; i < items.length; i++) {
-        var item = items[i];
+    for (var item of items) {
         accumulatedProbability += item.probability;
 
         if (randomValue <= accumulatedProbability) {
