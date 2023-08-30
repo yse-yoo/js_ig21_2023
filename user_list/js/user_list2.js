@@ -11,11 +11,17 @@ function createTableRow(user) {
     // パスワードを削除
     delete userData.password;
 
-    Object.values(userData).forEach(value => {
+    //配列を繰り返す
+    for (var key in user) {
         const cell = document.createElement("td");
-        cell.textContent = value;
+        cell.textContent = user[key];
         row.appendChild(cell);
-    });
+    }
+    // Object.values(userData).forEach(value => {
+    //     const cell = document.createElement("td");
+    //     cell.textContent = value;
+    //     row.appendChild(cell);
+    // });
     return row;
 }
 
