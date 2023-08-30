@@ -40,6 +40,7 @@ function processArray(values, callback) {
 
 const numbers = [1, 2, 3, 4, 5]
 
+console.log("--- function ---")
 function calculate(value) {
     var answer = value * 2 
     console.log(answer)
@@ -47,11 +48,17 @@ function calculate(value) {
 processArray(numbers, calculate)
 
 // anonymous function
+console.log("--- anonymous function ---")
 processArray(numbers, function(value) {
     var answer = value * 3 
     console.log(answer)
 })
 
-
+// arrow function
+console.log("--- arrow function ---")
+processArray(numbers, (value) => {
+    var answer = (value - 3) * 2 
+    console.log(answer)
+})
 
 
