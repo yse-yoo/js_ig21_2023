@@ -85,3 +85,15 @@ items.forEach(item => {
 // ` :バッククォート
 // ' :シングルクォート
 // " :ダブルクォート
+
+// map （配列を繰り返して新しい配列を作成）
+console.log("--- map ---")
+var newItems = items.map(function(item) {
+    return {
+        id: item.id,
+        name: item.name,
+        price: item.price,
+        withoutTaxPrice: Math.floor(item.price / 1.1),
+    }
+})
+console.log(newItems)
