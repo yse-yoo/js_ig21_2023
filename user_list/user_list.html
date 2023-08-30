@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Table</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    <script>
+        var users = [
+            { id: 1, name: 'User1', email: 'user1@example.com', password: 'xxxxxx' },
+            { id: 2, name: 'User2', email: 'user2@example.com', password: 'xxxxxx' },
+            { id: 3, name: 'User3', email: 'user3@example.com', password: 'xxxxxx' },
+        ];
+
+        var table = document.querySelector('table');
+
+        for (var user of users) {
+            var row = table.insertRow();
+            var idCell = row.insertCell(0);
+            var nameCell = row.insertCell(1);
+            var emailCell = row.insertCell(2);
+
+            idCell.innerHTML = user.id;
+            nameCell.innerHTML = user.name;
+            emailCell.innerHTML = user.email;
+        }
+    </script>
+</table>
+
+</body>
+</html>
