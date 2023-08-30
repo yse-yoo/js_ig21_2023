@@ -46,6 +46,11 @@ function calculate(value) {
 }
 processArray(numbers, calculate)
 
+// anonymous function
+processArray(numbers, function(value) {
+    var answer = value * 3 
+    console.log(answer)
+})
 
 
 
