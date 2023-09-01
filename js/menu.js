@@ -1,5 +1,8 @@
 console.log(this)
 
-function sayFunction(element) {
+const messageElement = document.getElementById('message')
+this.name = "John"
 
+function sayFunction(element) {
+    messageElement.innerHTML = element.name
 }
