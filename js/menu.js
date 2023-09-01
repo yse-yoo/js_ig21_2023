@@ -25,3 +25,12 @@ function sayAnonymous(element) {
 function sayArrow(element) {
     person.sayHello2()
 }
+
+function Person(name) {
+    this.name = name
+    messageElement.innerHTML = this.name
+}
+
+function sayPerson(element) {
+    new Person("Alice")
+}
