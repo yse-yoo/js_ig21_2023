@@ -27,7 +27,8 @@ console.log(message);
 // window.onload = function() {
 //     console.log("東京");
 // }
-window.onload = () => {
+// window.onload = () => {
+window.onload = function() {
     console.log("東京");
     var message = hello2("YSE");
     console.log(message);

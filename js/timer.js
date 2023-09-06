@@ -1,5 +1,5 @@
 var counterElement = document.getElementById("counter")
-var interval = 1000
+var interval = 1000 //1sec
 var timer
 var count = 0
 
@@ -12,7 +12,7 @@ function reset() {
 
 function start() {
     clearInterval(timer)
-    timer = setInterval(() => {
+    timer = setInterval(function() {
         count++
         counterElement.innerHTML = count
     }, interval);

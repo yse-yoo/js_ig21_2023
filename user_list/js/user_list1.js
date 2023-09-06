@@ -25,6 +25,9 @@ function updateTable() {
 
     // for-of
     for (const user of users) {
+    // for (const index in users) {
+    // for (var index = 0; index < users.length; index++) {
+        // var user = users[index]
         var row = document.createElement('tr');
 
         var idCell = document.createElement('td');
