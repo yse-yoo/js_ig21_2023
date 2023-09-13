@@ -25,4 +25,10 @@ Array.from(cities).forEach(city => {
 
 
 var menus = document.getElementsByClassName("menus")
-console.log(menus)
+// console.log(menus)
+for (const menu of menus) {
+    console.log(menu)
+    for (const item of menu.children) {
+        console.log(item.innerHTML)
+    }
+}
