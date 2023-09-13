@@ -6,5 +6,11 @@ function auth() {
     console.log(email)
     console.log(password)
 
-    return false
+    if (email == "" || password == "") {
+        document.getElementById("error-message")
+                .innerHTML = "Emailまたはパスワードを入力してください"
+        return false
+    } else {
+        return true
+    }
 }
