@@ -12,3 +12,8 @@ console.log('--- for of ---')
 for (const city of cities) {
     console.log(city.innerHTML)
 }
+
+console.log('--- for of ---')
+Array.from(cities).forEach(city => {
+    console.log(city.innerHTML)
+});
