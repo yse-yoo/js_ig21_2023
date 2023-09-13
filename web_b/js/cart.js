@@ -19,6 +19,7 @@ const addCart = () => {
     // TODO: カート追加処理
     const index = document.getElementById('item-list').selectedIndex;
     const item = items[index];
+    // const item = items.find((item) => item.id == itemId);
     cartItems.push(item);
     reloadCart()
 }
@@ -36,7 +37,7 @@ const removeCartItems = () => {
             itemsToRemove.push(cartItems[index]);
         }
     });
-        itemsToRemove.forEach((item) => {
+    itemsToRemove.forEach((item) => {
         const index = cartItems.indexOf(item);
         if (index !== -1) {
             cartItems.splice(index, 1);
