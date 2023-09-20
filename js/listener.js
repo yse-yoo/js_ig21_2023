@@ -19,8 +19,11 @@ calculateBtn.addEventListener('click', function(event) {
 
 var countBtn = document.getElementById('count-btn')
 var count = 0
-// click event 登録
-countBtn.addEventListener('click', function(event) {
+
+var countHandeler = function(event) {
     count++
     document.getElementById('count').innerHTML = count
-})
+}
+
+// click event 登録
+countBtn.addEventListener('click', countHandeler)
