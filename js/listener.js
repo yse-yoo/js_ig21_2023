@@ -31,3 +31,14 @@ var removeBtn = document.getElementById('remove-btn')
 removeBtn.addEventListener('click', function() {
     countBtn.removeEventListener('click', countHandeler)
 })
+
+// mouse event
+document.getElementById('mouse-area')
+        .addEventListener('mouseover', function() {
+            this.innerHTML = "マウスオーバー"
+        })
+
+document.getElementById('mouse-area')
+        .addEventListener('mouseout', function() {
+            this.innerHTML = "マウスアウト"
+        })
