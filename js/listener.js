@@ -17,13 +17,17 @@ calculateBtn.addEventListener('click', function(event) {
     event.preventDefault()
 })
 
+// count up
 var countBtn = document.getElementById('count-btn')
 var count = 0
-
 var countHandeler = function(event) {
     count++
     document.getElementById('count').innerHTML = count
 }
-
-// click event 登録
 countBtn.addEventListener('click', countHandeler)
+
+// remove event
+var removeBtn = document.getElementById('remove-btn')
+removeBtn.addEventListener('click', function() {
+    countBtn.removeEventListener('click', countHandeler)
+})
