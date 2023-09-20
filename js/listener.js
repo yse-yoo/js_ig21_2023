@@ -42,3 +42,10 @@ document.getElementById('mouse-area')
         .addEventListener('mouseout', function() {
             this.innerHTML = "マウスアウト"
         })
+
+document.getElementById('mouse-move-area')
+        .addEventListener('mousemove', function(event) {
+            console.log(event.pageX, event.pageY)
+            var message = event.pageX + ', ' + event.pageY
+            this.innerHTML = message
+        })
