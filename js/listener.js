@@ -16,3 +16,11 @@ calculateBtn.addEventListener('click', function(event) {
     // JSをストップ
     event.preventDefault()
 })
+
+var countBtn = document.getElementById('count-btn')
+var count = 0
+// click event 登録
+countBtn.addEventListener('click', function(event) {
+    count++
+    document.getElementById('count').innerHTML = count
+})
