@@ -53,4 +53,6 @@ document.getElementById('mouse-move-area')
 // keyboard event
 document.addEventListener('keydown', function(event) {
     console.log(event.keyCode)
+    document.getElementById('key-code-area')
+            .innerHTML = event.keyCode
 })
