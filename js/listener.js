@@ -49,3 +49,8 @@ document.getElementById('mouse-move-area')
             var message = event.pageX + ', ' + event.pageY
             this.innerHTML = message
         })
+
+// keyboard event
+document.addEventListener('keydown', function(event) {
+    console.log(event.keyCode)
+})
