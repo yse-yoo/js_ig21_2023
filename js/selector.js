@@ -21,3 +21,6 @@ for (const city of cities) {
 
 var items = document.querySelectorAll('ul.menus > li')
 console.log(items)
+
+// jQuery
+// $('ul.menus > li')
