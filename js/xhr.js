@@ -20,6 +20,9 @@ xhr.onload = function () {
     // JSON -> Array & Object
     const persons = JSON.parse(json)
     console.log(persons)
+    for (const person of persons) {
+       console.log(person.name) 
+    }
 }
 // 実行
 xhr.send();
