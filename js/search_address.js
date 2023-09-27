@@ -17,6 +17,14 @@ const loadPrefectures = async () => {
     // JSON -> Array & Object
     const prefectures = await response.json()
     console.log(prefectures)
+
+    //プルダウン作成
+    prefectures.forEach((prefecture) => {
+        var option = document.createElement('option')
+        option.value = prefecture.code
+        option.innerHTML = prefecture.name
+        document.getElementById('prefecture').appendChild(option)
+    })
 }
 
 // 都道府県プルダウン生成メイン処理
