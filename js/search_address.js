@@ -29,17 +29,23 @@ const loadPrefectures = async () => {
 
 
 const ZIPCLOUD_API_URL = "https://zipcloud.ibsnet.co.jp/api/search";
-// 郵便番号検索処理（非同期）
+// 郵便番号検索処理&データを返す（非同期）
 const searchAPI = async (zipcode) => {
     if (!zipcode) return;
     const query_param = new URLSearchParams({ zipcode: zipcode, })
     const uri = ZIPCLOUD_API_URL + "?" + query_param;
     console.log(uri);
+    const response = await fetch(uri)
+    // JSON -> Array & Object
+    const data = await response.json()
+    return data;
 }
 
+// クリックイベントハンドラ
 const searchHandler = async () => {
     const zipcode = document.getElementById('zipcode').value;
     var data = await searchAPI(zipcode);
+    console.log(data)
 }
 
 // 都道府県プルダウン生成メイン処理
