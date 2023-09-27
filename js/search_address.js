@@ -7,3 +7,17 @@ function getApiURL() {
 }
 const API_URL = getApiURL();
 console.log(API_URL);
+
+// 都道府県データ取得（非同期）
+const loadPrefectures = async () => {
+    // Fetch API
+    // サーバーにアクセスして、レスポンス取得（非同期）
+    const response = await fetch(API_URL)
+    console.log(response)
+    // JSON -> Array & Object
+    const prefectures = await response.json()
+    console.log(prefectures)
+}
+
+// 都道府県プルダウン生成メイン処理
+loadPrefectures();
