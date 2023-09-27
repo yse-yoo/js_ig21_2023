@@ -14,8 +14,12 @@ const xhr = new XMLHttpRequest();
 xhr.open("GET", API_URL, true)
 // リクエスト後の処理
 xhr.onload = function () {
+    // JSONデータ取得
     const json = xhr.responseText;
     console.log(json);
+    // JSON -> Array & Object
+    const persons = JSON.parse(json)
+    console.log(persons)
 }
 // 実行
 xhr.send();
