@@ -32,9 +32,11 @@ const ZIPCLOUD_API_URL = "https://zipcloud.ibsnet.co.jp/api/search";
 // 郵便番号検索処理&データを返す（非同期）
 const searchAPI = async (zipcode) => {
     if (!zipcode) return;
+    // 郵便番号（zipcode）つきのAPI URL作成
     const query_param = new URLSearchParams({ zipcode: zipcode, })
     const uri = ZIPCLOUD_API_URL + "?" + query_param;
     console.log(uri);
+    // データ取得
     const response = await fetch(uri)
     // JSON -> Array & Object
     const data = await response.json()
