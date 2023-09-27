@@ -48,6 +48,9 @@ const searchHandler = async () => {
     const zipcode = document.getElementById('zipcode').value;
     var data = await searchAPI(zipcode);
     console.log(data)
+    var results = data.results[0]
+    document.getElementById('prefecture').value = results.prefcode
+    document.getElementById('city').value = results.address2 + results.address3
 }
 
 // 都道府県プルダウン生成メイン処理
