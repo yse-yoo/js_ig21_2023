@@ -14,8 +14,10 @@ const xhr = new XMLHttpRequest();
 xhr.open("GET", API_URL, true)
 // リクエスト後の処理
 xhr.onload = function () {
-
+    const json = xhr.responseText;
+    console.log(json);
 }
-
+// 実行
+xhr.send();
 
 
